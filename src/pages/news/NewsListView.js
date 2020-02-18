@@ -13,7 +13,7 @@ import {Colors, Fonts, Images, ApplicationStyles, Metrics} from '../../Themes';
 import I18n from '../../I18n/I18n';
 import {GET_NEWS_LIST} from '../../actions/ActionTypes';
 import {isEmptyObject, convertDate, strNotNull, uniqueArray, FontSize} from '../../utils/ComonHelper';
-import {ImageLoad, PullListView, UltimateListView} from '../../components';
+import {ImageLoad, UltimateListView} from '../../components';
 import {NoDataView, LoadErrorView, LoadingView} from '../../components/load';
 import {fetchNewsList} from '../../actions/NewsAction';
 import PropTypes from 'prop-types';

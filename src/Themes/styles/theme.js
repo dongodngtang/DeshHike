@@ -23,7 +23,7 @@ export default {
         height: 44,
         paddingTop: Platform.Version >= 21 ? 20 : 0,
         //barColor: favoriteColor,
-        titleColor: 'white',
+        titleColor: '#F3E5B1',
         titleSize: 18,
         textBtnSize: 15
     }

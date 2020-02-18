@@ -423,7 +423,7 @@ class Personal extends Component {
                     <Text style={stylesP.personSignature}>{this._signature()}</Text>
 
                     <View style={{
-                        backgroundColor: '#D62222', height: 1,
+                        backgroundColor: '#DAB68A', height: 1,
                         width: Metrics.reallySize(248),
                         marginTop: 18
                     }}/>
@@ -444,7 +444,7 @@ class Personal extends Component {
                                     })
                             }}>
                             <Text style={{
-                                color: Colors.white,
+                                color: '#DAB68A',
                                 fontSize: 14
                             }}>{`${I18n.t('social.follow')}   ${following_count ? following_count : 0}`}</Text>
 
@@ -471,7 +471,7 @@ class Personal extends Component {
                                     })
                             }}>
                             <Text style={{
-                                color: Colors.white,
+                                color: '#DAB68A',
                                 fontSize: 14
                             }}>{`${I18n.t('stalwart')}   ${followers_count ? followers_count : 0}`}</Text>
 
@@ -593,13 +593,13 @@ const stylesP = StyleSheet.create({
     },
     personSignature: {
         fontSize: 13,
-        color: Colors.white,
+        color: '#DAB68A',
         marginTop: 8,
         backgroundColor: 'transparent'
     },
     personSignature2: {
         fontSize: 17,
-        color: Colors.white,
+        color: '#F3E5B1',
         fontWeight: 'bold',
         marginTop: 8,
         backgroundColor: 'transparent'

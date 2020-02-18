@@ -307,7 +307,7 @@ class TabHomePage extends Component {
         {/*global.router.toActivitiesPage()*/}
         {/*}}/>*/}
         <HomeTabBar
-          backStyle={{backgroundColor: 'rgba(229, 74, 46,' + opacity + ')'}}
+          backStyle={{backgroundColor: 'rgba(88, 10, 63,' + opacity + ')'}}
         />
         <ScrollView
           ref={ref => (this.mainScroll = ref)}

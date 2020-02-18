@@ -554,13 +554,12 @@ export default class ArticleRelease extends PureComponent {
                             screenHeight - toolBarHeight : screenHeight - toolBarHeight - 20
                     }}>
                     {/*导航栏*/}
-                    <NavigationBar barStyle={'dark-content'}
-                                   titleStyle={{fontSize: 17, color: Colors._333}}
-                                   toolbarStyle={{backgroundColor: 'white'}}
+                    <NavigationBar 
+                                   
+                                   toolbarStyle={{backgroundColor: Colors._E54}}
                                    title={I18n.t('release_article')}
                                    leftBtnText={I18n.t('cancel')}
                                    rightBtnText={I18n.t('draft_box')}
-                                   btnTextStyle={{fontSize: 14, color: Colors._333}}
                                    rightBtnPress={() => {
                                        this.closeAction();
                                        ///草稿箱
@@ -679,7 +678,7 @@ const styles = StyleSheet.create({
     send: {
         width: reallySize(142),
         height: reallySize(34),
-        backgroundColor: "#4A90E2",
+        backgroundColor: Colors._E54,
         borderRadius: 4,
         marginTop: reallySize(8),
         justifyContent: "center",

@@ -296,12 +296,10 @@ export default class MoodRelease extends Component {
             <View style={styles.container}>
                 <View>
                     {/*导航栏*/}
-                    <NavigationBar barStyle={'dark-content'}
-                                   titleStyle={{fontSize: 17, color: Colors._333}}
-                                   toolbarStyle={{backgroundColor: 'white'}}
+                    <NavigationBar 
+                                   toolbarStyle={{backgroundColor: Colors._E54}}
                                    title={I18n.t('article_mode')}
                                    leftBtnText={I18n.t('cancel')}
-                                   btnTextStyle={{fontSize: 14, color: Colors._333}}
                                    leftBtnPress={() => {
                                        router.pop()
                                    }}

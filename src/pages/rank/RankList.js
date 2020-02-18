@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {View, Text, FlatList, TouchableOpacity, StyleSheet, ListView, Image} from 'react-native';
 import I18n from '../../I18n/I18n';
 import {Metrics, Colors, Images} from '../../Themes';
-import {PullListView, UltimateListView} from '../../components';
+import {UltimateListView} from '../../components';
 import {NoDataView, LoadErrorView} from '../../components/load';
 import {getMainRank} from '../../services/RankDao';
 import {strNotNull, moneyFormat, nameRow} from '../../utils/ComonHelper';
