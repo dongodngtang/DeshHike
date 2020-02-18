@@ -5,7 +5,7 @@ import {Platform} from 'react-native'
 const Types = {
   photo:{
     android:PERMISSIONS.ANDROID.CAMERA,
-    ios:PERMISSIONS.IOS.MEDIA_LIBRARY
+    ios:PERMISSIONS.IOS.PHOTO_LIBRARY
   },
   camera:{
     android:PERMISSIONS.ANDROID.CAMERA,

@@ -39,9 +39,19 @@ PODS:
     - React
   - JWT (3.0.0-beta.11):
     - Base64 (~> 1.1.2)
+  - Permission-Camera (2.0.9):
+    - RNPermissions
   - Permission-LocationAlways (2.0.9):
     - RNPermissions
   - Permission-LocationWhenInUse (2.0.9):
+    - RNPermissions
+  - Permission-MediaLibrary (2.0.9):
+    - RNPermissions
+  - Permission-Microphone (2.0.9):
+    - RNPermissions
+  - Permission-Notifications (2.0.9):
+    - RNPermissions
+  - Permission-PhotoLibrary (2.0.9):
     - RNPermissions
   - Picker (4.3.7):
     - Picker/Core (= 4.3.7)
@@ -314,8 +324,13 @@ DEPENDENCIES:
   - JMessageRN (from `../node_modules/jmessage-react-plugin`)
   - JPush (from `../node_modules/jpush-react-native`)
   - JShareRN (from `../node_modules/jshare-react-native`)
+  - Permission-Camera (from `../node_modules/react-native-permissions/ios/Camera.podspec`)
   - Permission-LocationAlways (from `../node_modules/react-native-permissions/ios/LocationAlways.podspec`)
   - Permission-LocationWhenInUse (from `../node_modules/react-native-permissions/ios/LocationWhenInUse.podspec`)
+  - Permission-MediaLibrary (from `../node_modules/react-native-permissions/ios/MediaLibrary.podspec`)
+  - Permission-Microphone (from `../node_modules/react-native-permissions/ios/Microphone.podspec`)
+  - Permission-Notifications (from `../node_modules/react-native-permissions/ios/Notifications.podspec`)
+  - Permission-PhotoLibrary (from `../node_modules/react-native-permissions/ios/PhotoLibrary.podspec`)
   - Picker (from `../node_modules/react-native-picker`)
   - RCTRequired (from `../node_modules/react-native/Libraries/RCTRequired`)
   - RCTTypeSafety (from `../node_modules/react-native/Libraries/TypeSafety`)
@@ -393,10 +408,20 @@ EXTERNAL SOURCES:
     :path: "../node_modules/jpush-react-native"
   JShareRN:
     :path: "../node_modules/jshare-react-native"
+  Permission-Camera:
+    :path: "../node_modules/react-native-permissions/ios/Camera.podspec"
   Permission-LocationAlways:
     :path: "../node_modules/react-native-permissions/ios/LocationAlways.podspec"
   Permission-LocationWhenInUse:
     :path: "../node_modules/react-native-permissions/ios/LocationWhenInUse.podspec"
+  Permission-MediaLibrary:
+    :path: "../node_modules/react-native-permissions/ios/MediaLibrary.podspec"
+  Permission-Microphone:
+    :path: "../node_modules/react-native-permissions/ios/Microphone.podspec"
+  Permission-Notifications:
+    :path: "../node_modules/react-native-permissions/ios/Notifications.podspec"
+  Permission-PhotoLibrary:
+    :path: "../node_modules/react-native-permissions/ios/PhotoLibrary.podspec"
   Picker:
     :path: "../node_modules/react-native-picker"
   RCTRequired:
@@ -492,8 +517,13 @@ SPEC CHECKSUMS:
   JPush: 36f75044c90c1d27117909fe7421e13756d75248
   JShareRN: aa3205917d6eaf9d663ba010c4b4aa03e6a9b130
   JWT: 05028b9624591bba9681bb57df2c5f95fa258bad
+  Permission-Camera: edf691d05c6a37d588c1245a62bb53cdbed5f6ca
   Permission-LocationAlways: 9dd346ec4bd7aa43749acbe87f293df40e671b74
   Permission-LocationWhenInUse: b7140659f4fbb8c1c883d93f1e4d3d513ff13351
+  Permission-MediaLibrary: 42313ecf9f4974a62a9f74cd2d34a72dc99c29f7
+  Permission-Microphone: 52676a9967eaca6ba6f09d275c9c35020b583add
+  Permission-Notifications: 762ab4ed59676de16adeca3cbdda7339cd21bedc
+  Permission-PhotoLibrary: cc2a7040ab02d344f24536703f1e1fd4cea4fa37
   Picker: 67a2566d9ff6b141d505d88b9177f905aaa5f1a6
   QBImagePickerController: d54cf93db6decf26baf6ed3472f336ef35cae022
   RCTRequired: 81db8debffc2eb932841fa02dcf5a2e911af74c1
@@ -537,6 +567,6 @@ SPEC CHECKSUMS:
   SSZipArchive: 41455d4b8d2b6ab93990820b50dc697c2554a322
   Yoga: 6af72bedeaea291a3a3717772d6d41836f23a1b9
 
-PODFILE CHECKSUM: a2969ce7013956cc2009a5ada01f0a6ee29a0b27
+PODFILE CHECKSUM: c6bc62a559eb6e80cf34c5a094bb0feb8e327d49
 
 COCOAPODS: 1.5.3
