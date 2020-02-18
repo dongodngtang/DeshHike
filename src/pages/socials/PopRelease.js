@@ -4,7 +4,7 @@ import {
     TouchableOpacity, Modal,
     Text, Platform
 } from 'react-native';
-import {Images, Colors} from '../../Themes';
+import {Images, Colors, Metrics} from '../../Themes';
 import {createAnimatableComponent} from 'react-native-animatable';
 import I18n from '../../I18n/I18n';
 import {isEmptyObject} from '../../utils/ComonHelper';
@@ -92,7 +92,7 @@ export default class PopRelease extends PureComponent {
 
                 <TouchableOpacity
                     activeOpacity={1}
-                    style={{position: 'absolute', bottom: 0, left: '50%', marginLeft: -26}}
+                    style={{position: 'absolute', bottom:Metrics.iPhone_X?20: 0, left: '50%', marginLeft: -26}}
                     onPress={this.toggle}>
                     <Image
                         style={{height: 52, width: 52}}
