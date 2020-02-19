@@ -106,6 +106,7 @@ export default class Information extends PureComponent {
                 {_separator()}
 
                 <FlatList
+                    scrollEnabled={false}
                     showsHorizontalScrollIndicator={false}
                     ItemSeparatorComponent={_separator}
                     data={this.state.hot_infos}
