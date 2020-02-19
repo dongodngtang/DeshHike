@@ -1,4 +1,4 @@
-package com.deshpro.macauhike;
+package com.deshpro.macauhike.wxapi;
 
 import android.app.Activity;
 import android.os.Bundle;
