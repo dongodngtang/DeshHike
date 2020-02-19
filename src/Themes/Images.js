@@ -355,6 +355,7 @@ const images = {
         car_bg:require('../../source/navigation/car_bg.png'),
         coupon_bg:require('../../source/navigation/coupon_bg.png'),
         ferry_bg:require('../../source/navigation/ferry_bg.png'),
+        ferry_bg1:require('../../source/navigation/ferry_bg1.png'),
         hotel_bg:require('../../source/navigation/hotel_bg.png'),
         info_ng:require('../../source/navigation/info_ng.png'),
         mall_bg:require('../../source/navigation/mall_bg.png'),

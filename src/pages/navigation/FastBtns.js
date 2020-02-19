@@ -16,48 +16,48 @@ const catalogs = [{
     icon: Images.navigation2.weather
 },
     {
-        name: '出入境',
+        name: '交通',
         type: 'fast_food',
         size: {height: 20, width: 21},
         icon: Images.navigation2.car_bg
     },
     {
-        name: '新闻',
+        name: '活动',
         type: 'round_trip',
         size: {height: 20, width: 21},
-        icon: Images.navigation2.ferry_bg
-    },
-    {
-        name: '便民',
-        type: 'public_service',
-        size: {height: 18, width: 18},
-        icon: Images.navigation2.convenient
-    }];
-
-const catalogs_two = [{
-    name: '攻略',
-    type: 'raiders',
-    size: {height: 19, width: 19},
-    icon: Images.navigation2.raiders_bg
-},
-    {
-        name: '签证',
-        type: 'visa',
-        size: {height: 19, width: 20},
-        icon: Images.navigation2.visa
-    },
-    {
-        name: '优惠',
-        type: 'coupon',
-        size: {height: 20, width: 20},
-        icon: Images.navigation2.coupon_bg
+        icon: Images.navigation2.ferry_bg1
     },
     {
         name: '商城',
         type: 'mall',
         size: {height: 18, width: 18},
         icon: Images.navigation2.mall_bg
-    }]
+    }];
+const catalogs_two = []
+// const catalogs_two = [{
+//     name: '攻略',
+//     type: 'raiders',
+//     size: {height: 19, width: 19},
+//     icon: Images.navigation2.raiders_bg
+// },
+//     {
+//         name: '签证',
+//         type: 'visa',
+//         size: {height: 19, width: 20},
+//         icon: Images.navigation2.visa
+//     },
+//     {
+//         name: '优惠',
+//         type: 'coupon',
+//         size: {height: 20, width: 20},
+//         icon: Images.navigation2.coupon_bg
+//     },
+//     {
+//         name: '商城',
+//         type: 'mall',
+//         size: {height: 18, width: 18},
+//         icon: Images.navigation2.mall_bg
+//     }]
 
 export default class FastBtns extends Component {
 
@@ -82,12 +82,12 @@ export default class FastBtns extends Component {
                         key={item.name}
                         onPress={() => {
                             if (item.type === 'weather')
-                                router.toWebView('天气', 'http://wx.weather.com.cn/mweather/101330101.shtml#1')
+                                router.toWebView('天气', 'http://wx.weather.com.cn/mweather/136010101.shtml')
                             else if (item.type === 'fast_food') {
-                                router.toWebView('出入境', 'http://www.fsm.gov.mo/psp/pspmonitor/mobile/PortasdoCerco.aspx')
+                                router.toWebView('交通', 'http://www.fsm.gov.mo/psp/pspmonitor/mobile/PortasdoCerco.aspx')
                             } else if (item.type === 'round_trip') {
                                 global.router.toHotelSearch({
-                                    name: '新闻',
+                                    name: '活动',
                                     type: 'news',
                                     size: item.size,
                                     icon: item.icon
@@ -122,7 +122,6 @@ export default class FastBtns extends Component {
                 flexDirection: 'row',
                 alignItems: 'center',
                 justifyContent: 'space-around',
-                marginTop: 16
             }}>
                 {catalogs_two.map((item, index) => {
                     return <TouchableOpacity

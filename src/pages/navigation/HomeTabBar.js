@@ -28,13 +28,13 @@ export default class HomeTabBar extends PureComponent {
                 </TouchableOpacity>
                 <View style={{flex: 1}}/>
 
-                <TouchableOpacity
+                {/* <TouchableOpacity
                     onPress={() => {
                         global.router.toActivitiesPage()
                     }}>
                     <Image style={styles.imgCat}
                            source={Images.gift}/>
-                </TouchableOpacity>
+                </TouchableOpacity> */}
             </View>
 
         </View>)

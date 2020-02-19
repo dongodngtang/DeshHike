@@ -6,8 +6,7 @@ import {
 } from 'react-native';
 import {ApplicationStyles, Images, Colors, Metrics} from '../../Themes';
 import {getPosition, isEmptyObject, logMsg, strNotNull} from "../../utils/ComonHelper";
-import {getApiType} from "../../services/RequestHelper";
-import {locations} from "../../services/SocialDao";
+import moment from 'moment'
 
 export default class HotCatalogs extends PureComponent {
 
@@ -18,10 +17,15 @@ export default class HotCatalogs extends PureComponent {
             <View style={styles.hotView}>
                 <View style={styles.viewLeft}>
                     <TouchableOpacity onPress={() => {
-                        global.router.toSelectTimePage();
+                        const date = {
+                            begin_date: moment().format('YYYY-MM-DD'),
+                            end_date: moment().add('hours', 24).format('YYYY-MM-DD'),
+                            counts: 1
+                        }
+                        global.router.toHotelListPage(date);
                     }} style={styles.leftTop}>
                         <Image style={styles.leftTop}
-                                         source={!isEmptyObject(home_imgs) && strNotNull(home_imgs.hotel_image) ? {uri:home_imgs.hotel_image} : Images.navigation2.hotel_bg}/>
+                                         source={ Images.navigation2.hotel_bg}/>
                     </TouchableOpacity>
                     <TouchableOpacity onPress={() => {
                         global.router.toRatePage();

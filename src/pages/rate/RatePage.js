@@ -56,7 +56,7 @@ export default class RatePage extends Component {
                         <Image
                             source={Images.macau.rate2}
                             style={{height: 142, width: '100%', position: 'absolute'}}/>
-                        <Text style={{fontSize: 15, color: 'white'}}>澳门本地汇率参考</Text>
+                        <Text style={{fontSize: 15, color: 'white'}}>菲律宾本地汇率参考</Text>
 
                     </TouchableOpacity>
 
@@ -77,8 +77,8 @@ export class RateTop extends Component {
         ratesItem: {},
         receiving_rate: {},
         price_changed: [{id: 0, img: Images.cny, abb: 'CNY', name: '人民币¥', price2: 0, price: '', showTrue: true},
-            {id: 1, img: Images.hkd, abb: 'HKD', name: '港币$', price2: 0, price: '', showTrue: false},
-            {id: 2, img: Images.mop, abb: 'MOP', name: '澳门币$', price2: 0, price: '', showTrue: false}],
+            {id: 1, img: Images.hkd, abb: 'HKD', name: '美元$', price2: 0, price: '', showTrue: false},
+            {id: 2, img: Images.mop, abb: 'MOP', name: '菲律宾比索$', price2: 0, price: '', showTrue: false}],
         show: false
     };
 

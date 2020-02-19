@@ -183,12 +183,12 @@ export default class HotelDetail extends PureComponent {
                     <View style={{flex: 1}}/>
 
                     <View style={{marginRight: 22, flexDirection: 'column', alignItems: 'flex-end'}}>
-                        {start_price !== '0.0' ? <Text style={styles.price3}><Text
+                        {/* {start_price !== '0.0' ? <Text style={styles.price3}><Text
                             style={{
                                 color: '#FF3F3F',
                                 fontSize: 12
                             }}>¥</Text>{this._discount(start_price, discount_amount)}<Text
-                            style={{color: '#AAAAAA', fontSize: 12}}>起</Text></Text> : null}
+                            style={{color: '#AAAAAA', fontSize: 12}}>起</Text></Text> : null} */}
                         <View style={{flex: 1}}/>
                         <TouchableOpacity style={{flexDirection: 'row'}}
                                           onPress={() => {

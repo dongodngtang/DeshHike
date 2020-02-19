@@ -367,7 +367,7 @@ class TabHomePage extends Component {
           ) : null}
         </ScrollView>
 
-        {show_task ? (
+        {/* {show_task ? (
           <TouchableOpacity
             style={{position: 'absolute', bottom: 20, right: 17}}
             onPress={() => {
@@ -387,7 +387,7 @@ class TabHomePage extends Component {
 
         {this.state.lottery && !isEmptyObject(global.login_user) ? (
           <AnimatedTurnTableDrawPage pop={true} />
-        ) : null}
+        ) : null} */}
       </View>
     );
   }

@@ -44,7 +44,7 @@ export default class RecreationPage extends PureComponent {
                 if (data.accessible) {
                     this.listView && this.listView.postRefresh([])
                     this.setState({
-                        isMacau: true,
+                        isMacau: false,
                         name_index: 1
                     })
                     setTimeout(() => {

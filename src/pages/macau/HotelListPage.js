@@ -312,9 +312,9 @@ export default class HotelListPage extends PureComponent {
                         {item.vouchers ? this._vouchers() : <View/>}
                         {item.recommend ? this._recommend() : <View/>}
                         <View style={{flex: 1}}/>
-                        {item.start_price !== '0.0' ? <Text style={styles.price}><Text
+                        {/* {item.start_price !== '0.0' ? <Text style={styles.price}><Text
                             style={{color: '#FF3F3F', fontSize: 12}}>¥</Text>{this._discount(start_price, discount_amount)}<Text
-                            style={{color: '#AAAAAA', fontSize: 12}}>起</Text></Text> : null}
+                            style={{color: '#AAAAAA', fontSize: 12}}>起</Text></Text> : null} */}
                     </View>
                 </View>
             </TouchableOpacity>
