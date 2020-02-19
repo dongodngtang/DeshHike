@@ -217,7 +217,7 @@ class TabHomePage extends Component {
     } else {
       this.setState({opacity: 1});
     }
-    this.onTopScroll(event);
+    // this.onTopScroll(event);
     this.scrollLoad(event);
   };
 
